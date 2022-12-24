@@ -1,3 +1,4 @@
+"""
 # @Lx_0988
 import logging
 from AutoForward import CAPTION_TEXT
@@ -34,3 +35,4 @@ async def editing(bot, message):
 
       except:
           pass
+"""
