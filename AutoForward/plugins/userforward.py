@@ -13,7 +13,7 @@ async def forward(client, update):
         await asyncio.sleep(600)
         await client.copy_message(
             chat_id=-1001688669689,
-            from_chat_id=FROMCHANNEL_ID,
+            from_chat_id=update.chat.id,
             message_id=update.id,
             caption=update.caption,
             parse_mode=enums.ParseMode.MARKDOWN
