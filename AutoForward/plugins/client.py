@@ -1,7 +1,6 @@
 # @Lx0988 | @0FLX
 import logging, asyncio
 logger = logging.getLogger(__name__)
-from AutoForward import FROMCHANNEL_ID
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
 
