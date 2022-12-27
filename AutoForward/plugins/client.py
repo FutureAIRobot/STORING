@@ -22,6 +22,7 @@ async def forward(client, update):
     except FloodWait as e:
         await asyncio.sleep(e.value)
 
+"""
 @Client.on_message(filters.chat(-1001846691219) & filters.group & media_filter)
 async def forward(client, update):
     try:      
@@ -36,3 +37,4 @@ async def forward(client, update):
 
     except FloodWait as e:
         await asyncio.sleep(e.value)
+"""
