@@ -1,4 +1,4 @@
-# @Lx0988
+# @Lx0988 | @0FLX
 import logging, asyncio
 logger = logging.getLogger(__name__)
 from AutoForward import FROMCHANNEL_ID
