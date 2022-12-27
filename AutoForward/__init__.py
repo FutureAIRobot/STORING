@@ -1,5 +1,5 @@
 # @Lx_0988
-import os, re, logging, time,
+import os, re, logging, time
 from logging.handlers import RotatingFileHandler
 from os import environ
 
