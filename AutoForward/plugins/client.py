@@ -1,4 +1,5 @@
 # @Lx0988 | @0FLX | 0AIB
+from AutoForward import CHANNEL_IDS
 import logging, asyncio
 logger = logging.getLogger(__name__)
 from pyrogram import Client, filters, enums
@@ -6,7 +7,7 @@ from pyrogram.errors import FloodWait
 
 media_filter = filters.document | filters.video | filters.audio
  
-@Client.on_message(filters.chat(-1001862738079) & media_filter)
+@Client.on_message(filters.chat(CHANNEL_IDS) & media_filter)
 async def forward(client, update):
     try:      
         await asyncio.sleep(10)
