@@ -7,13 +7,12 @@ from pyrogram.errors import FloodWait
 
 media_filter = filters.document | filters.video | filters.audio
  
-@Client.on_message(filters.chat(-1001862738079) & media_filter)
-async def forward(client, update):
-    await asyncio.sleep(15)
+@Client.on_message(filters.chat(CHANNEL_IDS) & media_filter)
+async def forward(client, update):   
     try:      
-#       await asyncio.sleep(600)
+        await asyncio.sleep(300)
         await client.copy_message(
-            chat_id=-1001694326166, #-1001857977699,
+            chat_id=-1001857977699,
             from_chat_id=update.chat.id,
             message_id=update.id,
             caption=update.caption,
