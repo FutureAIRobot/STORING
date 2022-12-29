@@ -7,7 +7,7 @@ from pyrogram.errors import FloodWait
 
 media_filter = filters.document | filters.video | filters.audio
  
-@Client.on_message(filters.chat(-1001694326166) & media_filter)
+@Client.on_message(filters.chat(-1001862738079) & media_filter)
 async def forward(client, update):
     await asyncio.sleep(15)
     try:      
