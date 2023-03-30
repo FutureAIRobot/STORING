@@ -40,7 +40,7 @@ async def forward_messages(client, message):
                         caption=message.caption.text
                     )
             # Wait for 5 minutes before next iteration
-            time.sleep(300)
+            time.sleep(5)
         except Exception as e:
             print(e)
 
