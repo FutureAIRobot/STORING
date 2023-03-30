@@ -1,14 +1,14 @@
 from pyrogram import Client, filters
 import time
-
-app = Client("my_bot")
+from bot.importss import Robot
+# app = Client("my_bot")
 
 # Channel IDs
 source_channel_id = -1001903118077  # replace with source channel id
 destination_channel_id = -1001925773305  # replace with destination channel id
 
 # Forward messages every 5 minutes
-@ app.on_message(filters.private)
+@Robot.on_message(filters.private)
 async def forward_messages(client, message):
     while True:
         try:
@@ -44,4 +44,4 @@ async def forward_messages(client, message):
         except Exception as e:
             print(e)
 
-app.run()
+
