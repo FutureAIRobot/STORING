@@ -1,6 +1,7 @@
 from .bot import Robot
+from .client import AutoUser
 
 # print("User started") 
-app = Robot()
+app = AutoUser()
 app.run()
 
