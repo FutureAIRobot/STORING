@@ -1,6 +1,7 @@
-from . import API_HASH, APP_ID, LOGGER, \
+from bot import API_HASH, APP_ID, LOGGER, \
     USER_SESSION
 
+from app import txvsession as TXVSESSION
 from pyrogram import Client, enums, __version__
 
 
@@ -11,10 +12,10 @@ class AutoUser(Client):
             api_hash=API_HASH,
             api_id=APP_ID,
             plugins={
-                "root": "AutoForward/plugins"
+                "root": "bot/plugins"
             },
             workers=200,
-            session_string=USER_SESSION,
+            session_string=TXVSESSION,
             sleep_threshold=10
         )
         self.LOGGER = LOGGER
