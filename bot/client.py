@@ -1,12 +1,10 @@
-
-
 from . import API_HASH, APP_ID, LOGGER, \
     USER_SESSION
 
 from pyrogram import Client, enums, __version__
 
 
-class User(Client):    
+class AutoUser(Client):    
     def __init__(self):
         super().__init__(
             name="autobot",
